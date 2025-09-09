@@ -1,0 +1,23 @@
+a, b = 12, 5
+if a + b:
+    print('True')
+else:
+  print('False')
+  >>> len(c1)
+6
+>>> print(c1)
+{16, 21, 8, 41, 28, 30}
+>>> c1 = {16, 8, 21, 30, 41, 28,8} NAO ACEITA ELEMENTOS REPETIDOS
+>>> print(c1)
+{16, 21, 8, 41, 28, 30}
+
+>>> c2 = set()  CRIAÇÃO DE UM SET VAZIO(TEM DE USAR O CONSTRUTOR DA CLASSE)
+>>> type(c2)
+<class 'set'>
+>>> len(c2)
+0
+>>> print(c2)
+set()
+>>> c3 = {} PARECEQUE CRIA UM SET VAZIO MAIS NA VERDADECRIA UM OBJETO DA CLASSE DICIONARIO
+>>> type(c3)
+<class 'dict'>
