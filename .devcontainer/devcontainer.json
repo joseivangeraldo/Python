@@ -1,20 +1,11 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "hostRequirements": {
-    "cpus": 4
-  },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "",
-  "customizations": {
-    "codespaces": {
-      "openFiles": []
+    "name": "Anaconda Codespace",
+    "build": {
+        "dockerfile": "Dockerfile"
     },
-    "vscode": {
-      "extensions": [
-        "ms-toolsai.jupyter",
+    "settings": {},
+    "extensions": [
         "ms-python.python"
-      ]
-    }
-  }
+    ],
+    "postCreateCommand": "conda activate codespace"
 }
