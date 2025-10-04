@@ -1,5 +1,5 @@
 Lst = []
-for linha in open('entrada_er_11.4.txt'):   # abre o arquivo e o usa como iterável - 'r' foi omitido
+for linha in open('entrada_er11_04.txt'):   # abre o arquivo e o usa como iterável - 'r' foi omitido
     Lst.append(int(linha))                 # converte linha para inteiro e coloca na lista
 print('Valores lidos do arquivo')
 print(Lst)
