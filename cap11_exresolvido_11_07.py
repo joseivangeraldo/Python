@@ -1,6 +1,6 @@
 codGravacao = input('Digite a codificação de Gravação: ')
 codLeitura = input('Digite a codificação de Leitura: ')
-
+##encodding ANSI ou UTF-8
 print('Etapa de gravação do arquivo')
 arq = open('codificacao.txt', 'w', encoding=codGravacao)
 arq.write('Gravação de Arquivo\n')
