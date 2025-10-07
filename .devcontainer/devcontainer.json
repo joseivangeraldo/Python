@@ -1,3 +1,10 @@
-{
- "ghcr.io/davzucky/devcontainers-features-wolfi/python:1": {}
-}
+    {
+      "name": "Python 3",
+      "image": "mcr.microsoft.com/devcontainers/python:latest",
+      "features": {
+        "ghcr.io/devcontainers/features/anaconda:1": {
+          "version": "latest"
+        }
+      },
+      "postCreateCommand": "conda env create -f environment.yml && conda activate myenv"
+    }
