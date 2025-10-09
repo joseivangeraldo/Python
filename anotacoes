@@ -125,3 +125,20 @@ rocker/binder - From the R focused rocker-project, lets you run both RStudio and
 jupyter/repo2docker - Turn git repositories into Jupyter-enabled Docker Images
 openshift/source-to-image - A tool for building artifacts from source code and injecting them into docker images
 jupyter-on-openshift/jupyter-notebooks - OpenShift compatible S2I builder for basic notebook images
+
+To start Jupyter Notebook or JupyterLab within a Conda environment, follow these steps:
+Open your terminal or Anaconda Prompt: This is the command-line interface where you will interact with Conda.
+Activate your desired Conda environment: If you have a specific environment where you want to run Jupyter, activate it using the conda activate command. Replace myenv with the actual name of your environment.
+Code
+
+    conda activate myenv
+If you want to use the base environment, you can skip this step, or explicitly activate it with conda activate base.
+Launch Jupyter Notebook or JupyterLab: Once your environment is activated, you can launch the desired application.
+To launch Jupyter Notebook:
+Code
+
+        jupyter notebook
+To launch JupyterLab.
+Code
+
+        jupyter lab
