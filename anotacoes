@@ -1,3 +1,13 @@
+Changelog
+A summary of changes in the Jupyter notebook. For more detailed information, see GitHub.
+
+Use pip install notebook --upgrade or conda upgrade notebook to upgrade to the latest release.
+
+We strongly recommend that you upgrade pip to version 9+ of pip before upgrading notebook.
+
+Use pip install pip --upgrade to upgrade pip. Check pip version with pip --version.
+
+
 a, b = 12, 5
 if a + b:
     print('True')
