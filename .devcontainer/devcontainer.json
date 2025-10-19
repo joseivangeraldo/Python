@@ -1,6 +1,6 @@
 {
   "name": "Python & Jupyter",
-  "postCreateCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "pip install -r jupyter",
   "forwardPorts": [8888],
   "customizations": {
     "vscode": {

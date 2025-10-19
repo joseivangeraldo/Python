@@ -9,6 +9,7 @@ Configure o Codespace para iniciar o Jupyter Notebook e expor a porta correta.
 (Opcional) Adicione instruções no README para facilitar o uso.
 Aqui está um exemplo básico usando requirements.txt e devcontainer.json:
 
+
 requirements.txt
 jupyter
 
@@ -23,7 +24,6 @@ jupyter
 Passos para rodar:
 
 No terminal do Codespace, execute:
-
 bash
 jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 O Codespace irá reconhecer a porta 8888 e fornecer um link para acesso ao Jupyter Notebook no navegador.
