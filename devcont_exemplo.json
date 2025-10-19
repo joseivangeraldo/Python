@@ -1,0 +1,15 @@
+{
+  "name": "Python & Jupyter",
+  "postCreateCommand": "pip install -r jupyter",
+  "forwardPorts": [8888],
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-toolsai.jupyter"]
+    }
+  }
+}
+
+OBSERVAÇÕES:
+No terminal do Codespace, execute:
+bash jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+O Codespace irá reconhecer a porta 8888 e fornecer um link para acesso ao Jupyter Notebook no navegador.
