@@ -1,0 +1,10 @@
+{
+  "name": "Python & Jupyter",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [8888],
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-toolsai.jupyter"]
+    }
+  }
+}
