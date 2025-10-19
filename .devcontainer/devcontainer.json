@@ -1,6 +1,2 @@
-{
-"features": {
-  "ghcr.io/devcontainers/features/python": {
-    "installJupyterlab": true
-  }
-}
+
+
