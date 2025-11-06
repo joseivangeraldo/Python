@@ -1,10 +1,36 @@
 {
-  "name": "Python & Jupyter",
-  "postCreateCommand": "pip install -r jupyter",
-  "forwardPorts": [8888],
-  "customizations": {
-    "vscode": {
-      "extensions": ["ms-toolsai.jupyter"]
-    }
-  }
+    "name": "Jupyter Notebook Development",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "jovyan",
+            "userUid": "1000",
+            "userGid": "1000",
+            "upgradePackages": "true"
+        }
+    },
+    "forwardPorts": [8888],
+    "portsAttributes": {
+        "8888": {
+            "label": "Jupyter",
+            "requireLocalPort": true,
+            "onAutoForward": "ignore"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python" 
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python" 
+            }
+        }
+    },
+    "postCreateCommand": "pip install --no-cache-dir jupyterlab notebook ipykernel"
 }
