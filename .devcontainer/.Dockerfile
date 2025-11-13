@@ -1,4 +1,11 @@
-    #FROM mcr.microsoft.com/devcontainers/python:3.10
+# Dev container image for this repository — includes NASM and common build tools
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
-    # Or a more specific base image like:
- FROM jupyter/datascience-notebook:latest 
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
+    jupyter notebook \
+    git \
+    build-essential \
+  && apt-get clean \
