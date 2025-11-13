@@ -1,0 +1,40 @@
+Você pode usar a biblioteca interna do Python ou o pacote “virtualenv”.
+
+Observe abaixo, como deve executar o virtualenv via linha de comando:
+
+python3 -m venv kivy_project
+Ele copiará seu executável do Python 3 em uma pasta chamada my_kivy_projecte e adicionará algumas outras subpastas a esse diretório.
+
+Para usar seu ambiente virtual, é necessário ativá-lo. No Mac e no Linux, você pode fazer isso executando o seguinte comando dentro da pasta kivy_project:
+
+source bin/activate
+O comando para Windows é semelhante, mas o local do script de ativação está dentro da pasta Scripts, em vez de bin.
+
+NO WINDOWS SÓ FUNCIONOU NO CONSOLE POWERSHELL:
+PS C:\Users\LG\Documents\Bradesco> & C:/Users/LG/Documents/Bradesco/kivy_project/Scripts/Activate.ps1
+(kivy_project) PS C:\Users\LG\Documents\Bradesco> 
+
+Agora que você tem um ambiente virtual Python ativado, pode executar pip para instalar o Kivy. No Linux e no Mac, para isso execute o seguinte comando:
+
+python -m pip install kivy
+Siga adiante para começar a escrever as primeiras linhas de código Kivy. Confira!
+
+Para sair de um ambiente virtual (venv), basta digitar deactivate no terminal e pressionar Enter. Esse comando funciona tanto no Windows quanto no Linux/macOS e desativa o ambiente, retornando ao seu ambiente Python padrão do sistema. 
+Comando: deactivate 
+Onde usar: No terminal ou prompt de comando onde o ambiente virtual está ativo. 
+O que acontece: O comando reverte as alterações feitas no seu sistema e você volta para o ambiente Python global. 
+
+
+Ambos podem estar em qualquer lugar entre 0 e 1.
+
+O valor padrão para ambas as dicas é 1.
+
+Você também pode usar pos_hint para posicionar o widget. No código apresentado acima, você diz ao Kivy para centralizar o widget nos eixos x e y.
+
+Para fazer o aplicativo rodar, você instancia sua classe MainApp e, então, chama a função run().
+
+Gostou do resultado?
+
+Agora vamos passar para outro desafio!
+
+Que tal inserirmos a imagem da tela abaixo?
