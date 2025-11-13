@@ -1,15 +1,34 @@
-{
-  "name": "Jupyter Notebook - devcontainer",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-vscode.cpptools",
-        "webfreak.debug"
-      ]
+   {
+      "name": "Jupyter Data Science Notebooks",
+      "build": {
+        "dockerfile": "Dockerfile" // Or specify an image directly
+      },
+      "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+          "installZsh": "true",
+          "username": "jovyan",
+          "userUid": "1000",
+          "userGid": "1000",
+          "upgradePackages": "true"
+        }
+      },
+      "forwardPorts": [8888],
+      "portsAttributes": {
+        "8888": {
+          "label": "Jupyter",
+          "requireLocalPort": true,
+          "onAutoForward": "ignore"
+        }
+      },
+      "customizations": {
+        "vscode": {
+          "settings": {
+            "python.defaultInterpreterPath": "/opt/conda/bin/python"
+          },
+          "extensions": [
+            "ms-python.python",
+            "ms-toolsai.jupyter"
+          ]
+        }
+      }
     }
-  },
-  "remoteUser": "vscode"
-}
