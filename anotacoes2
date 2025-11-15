@@ -50,3 +50,4 @@ pip install --upgrade pip
 python -m pip install kivy
 The installation failed because Kivy requires OpenGL development headers (GL/gl.h) which are missing. This is common when installing Kivy on headless Linux systems. You need to install system dependencies first:
 
+find /workspaces/Python -name "*.py" -type f | xargs grep -l "kivy\|Kivy" | head -10
