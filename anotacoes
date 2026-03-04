@@ -152,3 +152,15 @@ To launch JupyterLab.
 Code
 
         jupyter lab
+
+        Observe uma definição de classe simples:
+
+class MinhaNovaClasse:
+
+"Isto é uma docstring. Eu a criei dentro de minha nova classe"
+
+pass
+
+Veja que uma classe cria um namespace, local onde todos os seus atributos são definidos. Os atributos podem ser dados ou funções. Há também atributos especiais que começam com sublinhados duplos: __.
+
+Por exemplo, __doc__ que nos dá a docstring dessa classe.
