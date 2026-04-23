@@ -138,7 +138,8 @@ jupyter-on-openshift/jupyter-notebooks - OpenShift compatible S2I builder for ba
 
 To start Jupyter Notebook or JupyterLab within a Conda environment, follow these steps:
 Open your terminal or Anaconda Prompt: This is the command-line interface where you will interact with Conda.
-Activate your desired Conda environment: If you have a specific environment where you want to run Jupyter, activate it using the conda activate command. Replace myenv with the actual name of your environment.
+Activate your desired Conda environment: If you have a specific environment where you want to run Jupyter, activate it
+ using the conda activate command. Replace myenv with the actual name of your environment.
 Code
 
     conda activate myenv
@@ -164,3 +165,46 @@ pass
 Veja que uma classe cria um namespace, local onde todos os seus atributos são definidos. Os atributos podem ser dados ou funções. Há também atributos especiais que começam com sublinhados duplos: __.
 
 Por exemplo, __doc__ que nos dá a docstring dessa classe.
+
+>>> (s1 + ' ' + s2 + ' ')* 6
+'ant bat ant bat ant bat ant bat ant bat ant bat '
+>>> (s1 + ' ' + s2 + ' ')* 6 + s1 + ' ' + s2
+'ant bat ant bat ant bat ant bat ant bat ant bat ant bat'
+>>> (s2*2)+s3
+'batbatcod'
+>>> ((s2*2)+s3+ ' ')* 4
+'batbatcod batbatcod batbatcod batbatcod '
+>>> ((s2*2)+s3+ ' ')* 4 + (s2*2)+s3
+'batbatcod batbatcod batbatcod batbatcod batbatcod'
+>>> 
+
+OPERADORES DE LISTAS E FUNÇÕES
+
+Uso				Explicação
+x in lst		Verdadeiro se o objeto x estiver na lista lst; caso contrário, falso
+x not in lst		Falso se o objeto x estiver na lista lst; caso contrário, verdadeiro
+lstA + lstB		Concatenação das listas lstA e lstB
+lst * n,n * lst		Concatenação de n cópias da lista lst
+lst[i]			Item no índice i da lista lst
+len(lst)		Comprimento da lista lst
+min(lst)		Menor item na lista lst
+max(lst)		Maior item na lista lst
+sum(lst)		Soma dos itens na lista lst
+
+Agora, escreva duas expressões Python que são avaliadas, respectivamente,
+como a primeiro e a última palavras em palavras, na ordem do dicionário.
+>>> palavras = ['taco', 'bola', 'celeiro', 'cesta', 'peteca']
+>>> min(palavras)
+'bola'
+>>> max(palavras)
+'taco'
+
+Uso				Explicação
+lst.append(item)		Inclui itens ao final da lista lst
+lst.count(item)			Retorna o número de ocorrências de item na lista lst
+lst.index(item)			Retorna o índice da primeira ocorrência do item na lista lst
+lst.insert(índice, item)	Insere item na lista imediatamente antes do índice
+lst.pop()			Remove o último item na lista
+lst.remove(item)		Remove a primeira ocorrência do item na lista
+lst.reverse()			Inverte a ordem dos itens na lista
+lst.sort()			Classifica a lista
