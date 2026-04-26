@@ -7,6 +7,23 @@ We strongly recommend that you upgrade pip to version 9+ of pip before upgrading
 
 Use pip install pip --upgrade to upgrade pip. Check pip version with pip --version.
 
+ivan_geraldo@cloudshell:~ (myproject74067)$ sudo apt install python3-tk
+
+2. If you are using Tkinter for a GUI
+You cannot run a standard Tkinter GUI window directly inside the Google Cloud Shell Terminal. 
+Use Cloud Shell Editor: If you are trying to view web-based output, use the Cloud Shell Editor to preview web applications, but this still won't support native desktop windows.
+Run Locally: For desktop GUIs, you must run your script on your local computer's Python environment rather than in the cloud.
+Web-based alternatives: Consider using a web framework like Streamlit or Flask if you need an interactive interface that works in a browser-based cloud environment. 
+Stack Overflow
+Stack Overflow
+ +4
+3. If you need a Virtual Display
+If you must run code that requires a display (e.g., for automated testing), you can simulate one using Xvfb (X Virtual Framebuffer): 
+Install Xvfb: sudo apt-get install xvfb
+Run your script with it: xvfb-run python your_script.py
+
+xvfb-run --auto-servernum --server-num=1 --server-args="-screen 1 1024x768x24" drawing.py
+
 
 a, b = 12, 5
 if a + b:
