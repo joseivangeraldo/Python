@@ -36,7 +36,52 @@ t.setheading(ângulo)                Defina a orientação da tartaruga como ân
 t.circle(raio)                      Desenhe um círculo com o raio indicado; o centro do círculo está a raio pixels à esquerda da tartaruga
 t.circle(raio, ângulo)              Desenhe um círculo com o raio eapenas a parte do círculo (ver acima) correspondente ao ângulo
 t.dot(diâmetro, cor)                Desenhe um ponto com o diâmetro e cor indicados
-t.penup()                           Levante a caneta; não desenha ao movimentar
+t.penup()                           Levante a caneta; não desenha ao 
+
+Uso                           Explicação
+s.bgcolor(cor)                Muda a cor do fundo da tela s para a cor descrita por meio da string cor
+s.clearscreen()               Apaga a tela s
+s.turtles()                    Retorna a lista de todas as tartarugas na tela s
+s.bye()                        Fecha a janela da tela s
+
+SEQUENCIA PARA DESENHA UM SMILE EM TURTLE PYTHON:
+turtle.Terminator
+>>> t = turtle.Turtle()
+>>> t.pensize(3)
+>>> x = -100
+>>> y = 100
+>>> t.goto(x,y)
+>>> t.undo()
+>>> t.penup()
+>>> t.goto(x,y)
+>>> t.pendown()
+>>> t.circle(100)
+>>> t.penup()
+>>> t.goto(x-35,y+120)
+>>> t.dot(25)
+>>> t..penup()
+  File "<stdin>", line 1
+    t..penup()
+      ^
+SyntaxError: invalid syntax
+>>> t.penup()
+>>> t.goto(x+35,y+120)
+>>> t.pendown()
+>>> t.dot(25)
+>>> t.penup()
+>>> t.goto(x-60.62, y +65)
+>>> t.pendown()
+>>> t.setheading((-60)
+... t.circle(70,120)
+  File "<stdin>", line 1
+    t.setheading((-60)
+                  ^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> t.setheading(-60)
+>>> t.circle(70,120)
+>>> s.bye()
+>>> 
+
 
 a, b = 12, 5
 if a + b:
