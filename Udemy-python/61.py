@@ -31,3 +31,13 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
+cpf = '74682489070'
+contador_regressivo = 10
+etapa1 = 0 
+
+cpf_calculado = cpf[:9]
+print(cpf_calculado)
+
+for num in cpf_calculado:
+    print(int(num) * contador_regressivo)
+    contador_regressivo -=1
