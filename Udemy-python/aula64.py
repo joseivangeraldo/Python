@@ -1,41 +1,4 @@
 """
-MEU CPF EXEMPLO PRIMEIRO DIGITO:
-10  9   8   7   6   5   4    3    2 
-1   6   2   5   1   7   9    1    8
-10  54  16  35  6   35  36   3   16  += 211
-
-211 * 10 = 2110
-2110 % 11 = 9   
-
-Calculo do primeiro dígito do CPF
-CPF: 746.824.890-70
-Colete a soma dos 9 primeiros dígitos do CPF
-multiplicando cada um dos valores por uma
-contagem regressiva começando de 10
-
-Ex.:  746.824.890-70 (746824890)
-   10  9  8  7  6  5  4  3  2
-*  7   4  6  8  2  4  8  9  0
-   70  36 48 56 12 20 32 27 0
-
-Somar todos os resultados: 
-70+36+48+56+12+20+32+27+0 = 301
-Multiplicar o resultado anterior por 10
-301 * 10 = 3010
-Obter o resto da divisão da conta anterior por 11
-3010 % 11 = 7
-Se o resultado anterior for maior que 9:
-    resultado é 0
-contrário disso:
-    resultado é o valor da conta
-
-O primeiro dígito do CPF é 7
-'85798978079' '00452461065' '06923148065' '98991719058' '78561377038' '59108482080' '24047760021' '37696055003'
-cpf = '74682489070'
-
-
-"""
-"""
 Calculo do segundo dígito do CPF
 CPF: 746.824.890-70
 Colete a soma dos 9 primeiros dígitos do CPF,
@@ -62,8 +25,13 @@ contrário disso:
 O segundo dígito do CPF é 0
 """
 # cpf = '36440847007'  # Esse CPF gera o primeiro dígito como 10 (0)
-cpf_enviado_usuario = '74682489070'
-nove_digitos = cpf_enviado_usuario[:9]
+import random
+
+
+nove_digitos = ''
+
+for i in range(9):
+    nove_digitos += str(random.randint(0,9))
 contador_regressivo_1 = 10
 
 resultado_digito_1 = 0
@@ -85,7 +53,5 @@ digito_2 = digito_2 if digito_2 <= 9 else 0
 
 cpf_gerado_pelo_calculo = f'{nove_digitos}{digito_1}{digito_2}'
 
-if cpf_enviado_usuario == cpf_gerado_pelo_calculo:
-    print(f'{cpf_enviado_usuario} é válido')
-else:
-    print('CPF inválido')
+print(cpf_gerado_pelo_calculo)
+
