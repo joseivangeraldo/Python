@@ -15,7 +15,7 @@ except ZeroDivisionError as e:
     print(e)
 except NameError:
     print('Nome b não está definido')
-except (TypeError, IndexError) as error:
+except (TypeError, IndexError) as error: ##
     print('TypeError + IndexError')
     print('MSG:', error)
     print('Nome:', error.__class__.__name__)
